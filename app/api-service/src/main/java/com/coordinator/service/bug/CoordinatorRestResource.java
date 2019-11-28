@@ -15,7 +15,7 @@ public class CoordinatorRestResource {
 
     private BugService bugService;
 
-    @RequestMapping(path ="/bug", produces = "application/json", method = RequestMethod.GET)
+    @RequestMapping(path ="/bugs", produces = "application/json", method = RequestMethod.GET)
     @ResponseBody
     public List<Bug> getResponse() {
         return BugMapper.map(bugService.getBugList());

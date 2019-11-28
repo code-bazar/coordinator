@@ -23,4 +23,5 @@ class Bug {
     public enum Status {
         ACTIVE
     }
+
 }
