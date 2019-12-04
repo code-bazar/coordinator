@@ -125,5 +125,29 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.coordinator.CoordinatorApplication</mainClass>
+                    <layout>JAR</layout>
+                    <classifier>exec</classifier>
+                    <executable>true</executable>
+                </configuration>
+                <executions>
+                    <execution>
+                        <configuration>
+                            <mainClass>com.coordinator.CoordinatorApplication</mainClass>
+                        </configuration>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
